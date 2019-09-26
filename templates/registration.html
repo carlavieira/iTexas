@@ -2,23 +2,23 @@
 {% load staticfiles %}
 {% block body_block %}
     <div class="container">
-        <div class="jumbotron">
-            {% if registered %}
-                <h1>pi!</h1>
-            {% else %}
-                <h1>Register Here</h1>
-                <h3>Just fill out the form.</h3>
-                <form enctype="multipart/form-data" method="POST">
-                    {% csrf_token %}
-                    {%  for field in form %}
 
-                    {% endfor %}
-                    {{ user_form.as_p }}
-                    {{ profile_form.as_p }}
-                    <input type="submit" name="" value="Register">
-                </form>
+        {% if registered %}
+            <h1>Registrado com Sucesso</h1>
+        {% else %}
+            <h1>Register Here</h1>
+            <h3>Just fill out the form.</h3>
+            <form enctype="multipart/form-data" method="POST">
+                {% csrf_token %}
+                {%  for field in form %}
 
-            {% endif %}
-        </div>
+                {% endfor %}
+                {{ user_form.as_p }}
+                {{ profile_form.as_p }}
+                <input type="submit" name="" value="Register">
+            </form>
+
+        {% endif %}
+
     </div>
 {% endblock %}

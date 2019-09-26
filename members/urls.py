@@ -7,4 +7,5 @@ from members import views
 urlpatterns = [
     url('register/', views.register, name='register'),
     url('user_login/', views.user_login, name='user_login'),
+    url('user_logout/', views.user_logout, name='user_logout'),
 ]
