@@ -6,17 +6,23 @@
         {% if registered %}
             <h1>Registrado com Sucesso</h1>
         {% else %}
-            <h1>Register Here</h1>
-            <h3>Just fill out the form.</h3>
-            <form enctype="multipart/form-data" method="POST">
-                {% csrf_token %}
-                {%  for field in form %}
+            <div class="registration-area ogr-container">
+                <h1 class="title">Registrar Novo Membro</h1>
+                <div class="form-group">
+                    <form enctype="multipart/form-data" method="POST">
+                        {% csrf_token %}
+                        {% for field in form %}
 
-                {% endfor %}
-                {{ user_form.as_p }}
-                {{ profile_form.as_p }}
-                <input type="submit" name="" value="Register">
-            </form>
+                        {% endfor %}
+                        {{ user_form.as_p }}
+                        {{ profile_form.as_p }}
+                        <p class="par-center">
+                            <input class="register-button" type="submit" value="Registrar">
+                        </p>
+
+                    </form>
+                </div>
+            </div>
 
         {% endif %}
 
