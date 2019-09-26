@@ -1,0 +1,378 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: #f6f7f9;
+}
+
+.ogr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #f6f7f9;
+    flex-direction: column;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    background-color: #f6f7f9;
+    justify-content: space-between;
+}
+
+.top-bar h2 {
+    width: 80%;
+    text-align: center;
+    text-shadow: 1px 2px 0px rgba(0,0,0,0.2);
+    color: #0a8ea0;
+    font-weight: 800;
+}
+
+.menu-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-picture {
+    border: 1px #444444 solid;
+    background-image: url("https://www.aerobell.com/wp-content/uploads/profile2.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    box-shadow: -1px 3px 8px 0px #000000;
+}
+
+.menu-contents .member-infos{
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.member-infos .member-name {
+    margin-top: 15px;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.member-infos .member-area {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu-contents ul.function-list {
+	list-style-type: none;
+    width: 80%;
+    padding-left: 0;
+}
+
+.menu-contents a {
+    font-size: 22px;
+}
+
+.login-panel {
+    margin: 100px 10px;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    flex-direction: column;
+    background-color: white;
+    background-color: #f6f7f9;
+}
+
+.login-panel .name-app {
+    font-weight: bold;
+}
+
+.login-panel .form-group {
+    display: flex;
+    align-items: baseline;
+}
+
+.login-panel .user-info {
+    margin-top: 30px;
+}
+
+.login-panel input {
+    margin-left: 10px;
+    height: 35px;
+    font-size: 15px;
+}
+
+.login-panel label {
+    width: 85px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.login-panel .button-session {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.login-button {
+    margin-top: 15px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0));
+	background:-moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0',GradientType=0);
+	background-color:#3d94f6;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:18px;
+	font-weight:bold;
+	padding:5px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
+
+.login-panel .login-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6));
+	background:-moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6',GradientType=0);
+	background-color:#1e62d0;
+    text-decoration: none;
+    color: #accaf3;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.forgot-pass {
+    text-decoration: underline;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+/* Login page for desktop screens > 1088px */
+
+@media (min-width: 47em) {
+    .login-panel {
+        border: 1px #accaf3 solid;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        background-color: #FFFFFF;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .lateral-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) {
+    .btn-menu {
+        display: none;
+    }
+    .top-bar h2 {
+        width: 100%;
+    }
+    .top-bar {
+        display: none;
+    }
+
+}
+
+.btn-menu {
+    margin: 15px;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    color: #FFF;
+    border-radius: 40px;
+    cursor: pointer;
+    background: linear-gradient(to right, #0a8ea0, #0ac7dd);
+    border: 1px #e5e5e5 solid;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-mobile {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.96);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+
+.menu-mobile ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    color: white;
+    font-weight: 900;
+}
+
+.menu-mobile li {
+    padding: 3.2%;
+    font-size: 20px;
+}
+
+.menu-mobile {
+    width: 100%;
+}
+
+.container-close {
+    width: 100%;
+    height: 50px;
+}
+
+.btn-close {
+    font-size: 2em;
+    color: white !important;
+    float: right;
+    cursor: pointer;
+    margin-right: 30px;
+    z-index: 2;
+}
+
+.page-body {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.page-body .lateral-menu {
+    max-width: 270px;
+    width: 270px;
+    background-color: #4D4D4D;
+    height: 800px;
+    float: left;
+    box-shadow: 1px -6px 7px 1px #cccccc;
+}
+
+.menu-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+.page-body .lateral-menu .logo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4AB9F1;
+    height: 70px;
+    color: #FFFFFF;
+    background: #0e8dbc;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.logo-mobile {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 46px;
+    font-weight: 300;
+}
+
+.page-body .page-content {
+    background-color: coral;
+}
+
+.lateral-menu .profile-picture {
+    width: 130px;
+    height: 130px;
+}
+.lateral-menu .member-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e5e5e5;
+}
+
+.lateral-menu ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    color: white;
+    font-weight: 900;
+    list-style-type: none;
+    padding: 30px 0;
+    list-style-type: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.lateral-menu li {
+    padding: 10px 0;
+    border-bottom: 1px #2a2a2a solid;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.lateral-menu a {
+    color: #e5e5e5;
+    font-weight: normal;
+}
+
+.lateral-menu a:hover {
+    color: #71b9dc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lateral-menu li:hover {
+    background-color: #6e6e6e;
+    color: #6dc6e5;
+}
+
+.lateral-menu li:first-child {
+    border-top: 1px #2a2a2a solid;
+}
+
+.lateral-menu li:hover a {
+    color: #6dc6e5;
+}
+
+
