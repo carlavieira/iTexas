@@ -9,9 +9,8 @@ class UserProfileInfo(models.Model):
         max_length=100,
         unique=True,
     )
-    member_id = models.IntegerField(unique=True)
-    first_name = models.CharField(max_length=10, verbose_name='Nome')
-    last_name = models.CharField(max_length=50, verbose_name='Sobrenome')
+    first_name = models.CharField(max_length=20, verbose_name='Nome')
+    last_name = models.CharField(max_length=20, verbose_name='Sobrenome')
     leader = models.CharField(max_length=50, verbose_name='Lider', default=None)
     department = models.CharField(max_length=30, verbose_name='Area', default=None)
     post = models.CharField(max_length=30, verbose_name='Cargo')
